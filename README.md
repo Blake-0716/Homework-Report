@@ -57,3 +57,45 @@ Homework-Report/
 ├── classes.csv         # Records table (Class schedules & spots)
 ├── .gitignore          # Excludes sensitive files (.env and *.db) from repository
 └── README.md           # Project documentation
+```
+
+## How to Install and Run It
+
+1. Clone the project repository:
+
+   ```bash
+   git clone https://github.com/Blake-0716/Homework-Report.git
+   cd Homework-Report
+   ```
+
+2. Install required dependencies (Python 3.10+):
+
+   ```bash
+   pip install gradio google-generativeai python-dotenv
+   ```
+
+3. Set up environment configuration:
+   Create a `.env` file in the root directory and insert your Gemini API Key:
+
+   ```env
+   GEMINI_API_KEY=your_actual_api_key_here
+   ```
+
+4. Launch the agent:
+
+   ```bash
+   python app-gradio.py
+   ```
+
+5. Open the local URL displayed in the console (usually `[http://127.0.0.1:7860](http://127.0.0.1:7860)`).
+
+6. Run the automated tool-choice test:
+
+   ```bash
+   python test_tool.py
+   ```
+
+## Notes
+
+- All member contact details, prices, and schedules are created for demonstration purposes.
+- The `.env` file containing the API key and local `.db` files are strictly excluded via `.gitignore` to protect security.
